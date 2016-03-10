@@ -31,6 +31,9 @@ Route::delete('users/invites/{id}/revoke', 'InviteController@revokeInvite');
 Route::get('invites/{token}', 'InviteController@viewInvite');
 Route::post('invites/{token}', 'InviteController@acceptInvite');
 
+// Alerts
+Route::resource('alerts', 'AlertController');
+
 // Stats Reports
 Route::post('statsreports/{id}/submit', 'StatsReportController@submit');
 Route::get('statsreports/{id}/download', 'StatsReportController@downloadSheet');

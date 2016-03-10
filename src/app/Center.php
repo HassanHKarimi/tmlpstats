@@ -198,6 +198,7 @@ class Center extends Model
         return $this->belongsTo('TmlpStats\Region');
     }
 
+
     public function reportTokens()
     {
         return $this->morphMany('TmlpStats\ReportToken', 'owner');
@@ -218,5 +219,10 @@ class Center extends Model
     public function abbrLower()
     {
         return strtolower($this->abbreviation);
+    }
+
+    public function alerts()
+    {
+        return $this->belongsToMany('TmlpStats\Alert');
     }
 }

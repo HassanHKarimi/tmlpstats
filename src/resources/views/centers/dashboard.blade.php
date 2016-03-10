@@ -1,6 +1,8 @@
 @extends('template')
 
 @section('content')
+    @include('partials.alerts')
+
     <h1>Team {{ $center->name }}</h1>
     <p>Welcome to Team {{ $center->name }}'s dashboard. Here you'll find details about your team's stats.</p>
 

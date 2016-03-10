@@ -303,6 +303,10 @@ div.box {
     font-size: medium;
 }
 
+.message-prefix {
+    font-weight: bold;
+}
+
 /** ADMIN */
 .select-action-pill {
     padding-bottom: 20px;

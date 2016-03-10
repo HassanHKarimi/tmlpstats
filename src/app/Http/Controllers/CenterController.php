@@ -46,11 +46,14 @@ class CenterController extends Controller
 
         $liveScoreboard = true;
 
+        $alerts = App::make(AlertController::class)->getAlerts($center);
+
         $data = compact(
             'center',
             'statsReport',
             'reportUrl',
-            'liveScoreboard'
+            'liveScoreboard',
+            'alerts'
         );
 
         return view('centers.dashboard')->with(array_merge($data, $weekData));
