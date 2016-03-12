@@ -303,6 +303,15 @@ div.box {
     font-size: medium;
 }
 
+div.message-center {
+    margin-top: 15px;
+}
+
+.message-center .panel-heading {
+    background-color: inherit;
+    border-bottom-style: dashed;
+}
+
 .message-prefix {
     font-weight: bold;
 }
